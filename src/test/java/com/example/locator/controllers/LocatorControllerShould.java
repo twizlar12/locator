@@ -34,7 +34,6 @@ class LocatorControllerShould {
         RequestBuilder request = MockMvcRequestBuilders.get("/locator");
         MvcResult result = mvc.perform(request).andReturn();
          assertThat(result.getResponse().getContentAsString(), containsString("Mapbox"));
-//         assertEquals("Finding restaurants around (0.0, 0.0)", result.getResponse().getContentAsString());
     }
 
     @Test

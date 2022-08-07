@@ -1,4 +1,4 @@
-package com.example.locator;
+package com.example.locator.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

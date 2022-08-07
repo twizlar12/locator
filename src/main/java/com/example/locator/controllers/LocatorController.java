@@ -1,6 +1,6 @@
 package com.example.locator.controllers;
 
-import com.example.locator.Restaurant;
+import com.example.locator.model.Restaurant;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
