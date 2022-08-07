@@ -1,0 +1,8 @@
+###
+
+# curl "https://api.mapbox.com/geocoding/v5/mapbox.places/-73.989,40.733.json?access_token=pk.eyJ1IjoidHdpemxhcjEyIiwiYSI6ImNsNjVvZnphYzA4NmUzYm5vbno4ZHhhNG0ifQ.TnvXUSGteqOINmkSsa2IHQ"
+GET https://api.mapbox.com/geocoding/v5/mapbox.places/-73.989,40.733.json?access_token=pk.eyJ1IjoidHdpemxhcjEyIiwiYSI6ImNsNjVvZnphYzA4NmUzYm5vbno4ZHhhNG0ifQ.TnvXUSGteqOINmkSsa2IHQ
+
+###
+
+GET https://api.mapbox.com/geocoding/v5/mapbox.places/-0.009483841970961748,51.560515568709604.json?types=poi&access_token=pk.eyJ1IjoidHdpemxhcjEyIiwiYSI6ImNsNjVvZnphYzA4NmUzYm5vbno4ZHhhNG0ifQ.TnvXUSGteqOINmkSsa2IHQ
