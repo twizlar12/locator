@@ -1,5 +1,6 @@
 package com.example.locator.controllers;
 
+import com.example.locator.Restaurant;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,14 +22,10 @@ public class LocatorController {
         String mapboxURL = String.format(url + "%s,%s.json?" + ACCESS_TOKEN, latitude, longitude);
 
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> response = restTemplate.getForEntity(mapboxURL, String.class);
-
-        String returnValue = response.getBody();
+        ResponseEntity<Restaurant> response = restTemplate.getForEntity(mapboxURL, Restaurant.class);
 
         System.out.println("RETURN FROM MAPBOX: " + response);
 
-        System.out.println("RETURN BODY FROM RESPONSE: " + returnValue);
-
-        return returnValue;
+        return response.getBody().getPlaceName();
     }
 }
